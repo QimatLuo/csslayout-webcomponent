@@ -12,6 +12,8 @@
 
 .toggle {
   margin-right: 12px;
+
+  transition-duration: 150ms;
 }
 
 .title {
@@ -21,11 +23,19 @@
 .content {
   border-top: 1px solid #d1d5db;
   padding: 16px;
+
+  transition-duration: 150ms;
 }
 
 .item--collapsed .content {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
 }
 .item--expanded .content {
-  display: block;
+  height: auto;
+}
+
+.item--expanded .toggle {
+  rotate: 90deg;
 }
