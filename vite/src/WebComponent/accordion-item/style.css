@@ -1,8 +1,8 @@
-.accordion__item {
+.item {
   border-bottom: 1px solid #d1d5db;
 }
 
-.accordion__header {
+.header {
   /* Center the content horizontally */
   align-items: center;
   display: flex;
@@ -11,23 +11,23 @@
   padding: 16px;
 }
 
-.accordion__toggle {
+.toggle {
   margin-right: 12px;
 }
 
-.accordion__title {
+.title {
   /* Take remaining width */
   flex: 1;
 }
 
-.accordion__content {
+.content {
   border-top: 1px solid #d1d5db;
   padding: 16px;
 }
 
-.accordion__item--collapsed .accordion__content {
+.item--collapsed .content {
   display: none;
 }
-.accordion__item--expanded .accordion__content {
+.item--expanded .content {
   display: block;
 }
