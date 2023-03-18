@@ -1,0 +1,15 @@
+.arrow-button {
+  /* Transparent background */
+  background-color: transparent;
+
+  /* Size */
+  height: 12px;
+  width: 12px;
+}
+
+.arrow-button--r {
+  /* Edges */
+  border-right: 1px solid #d1d5db;
+  border-top: 1px solid #d1d5db;
+  transform: translateX(-25%) rotate(45deg);
+}
