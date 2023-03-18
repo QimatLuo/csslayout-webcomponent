@@ -7,6 +7,7 @@ customElements.define("dep-arrow-button", ArrowButton);
 export class AccordionItem extends HTMLElement {
   constructor() {
     super();
+    this.slot = this.hasAttribute("slot") ? this.slot : "items";
 
     const template = document.createElement("template");
     template.innerHTML = `<style>${STYLE}</style>${TEMPLATE}`;
