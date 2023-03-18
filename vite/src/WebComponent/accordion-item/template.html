@@ -1,9 +1,15 @@
 <div class="item item--collapsed">
   <div class="header">
-    <div class="toggle">...</div>
+    <div class="toggle">
+      <slot name="icon">icon</slot>
+    </div>
 
-    <div class="title">...</div>
+    <div class="title">
+      <slot name="title">Title</slot>
+    </div>
   </div>
 
-  <div class="content">...</div>
+  <div class="content">
+    <slot name="content">Content</slot>
+  </div>
 </div>
