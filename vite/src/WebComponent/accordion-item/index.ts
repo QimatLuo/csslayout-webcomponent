@@ -1,6 +1,9 @@
 import STYLE from "./style.css?raw";
 import TEMPLATE from "./template.html?raw";
 
+import { ArrowButton } from "../arrow-button";
+customElements.define("dep-arrow-button", ArrowButton);
+
 export class AccordionItem extends HTMLElement {
   constructor() {
     super();
