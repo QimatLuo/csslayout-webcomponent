@@ -3,7 +3,6 @@
 }
 
 .header {
-  /* Center the content horizontally */
   align-items: center;
   display: flex;
 
@@ -16,7 +15,6 @@
 }
 
 .title {
-  /* Take remaining width */
   flex: 1;
 }
 
