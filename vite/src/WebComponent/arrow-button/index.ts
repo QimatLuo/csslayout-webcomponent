@@ -1,7 +1,8 @@
 import STYLE from "./style.css?raw";
 import TEMPLATE from "./template.html?raw";
 
-export class ArrowButton extends HTMLElement {
+export const tagName = "arrow-button";
+export class WebComponent extends HTMLElement {
   constructor() {
     super();
 

@@ -2,7 +2,8 @@ import { AccordionItem } from "../accordion-item";
 import STYLE from "./style.css?raw";
 import TEMPLATE from "./template.html?raw";
 
-export class Accordion extends HTMLElement {
+export const tagName = "accordion";
+export class WebComponent extends HTMLElement {
   constructor() {
     super();
 
