@@ -1,0 +1,41 @@
+.item {
+  border-bottom: 1px solid #d1d5db;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+
+  cursor: pointer;
+  padding: 16px;
+}
+
+.toggle {
+  margin-right: 12px;
+
+  transition-duration: 150ms;
+}
+
+.title {
+  flex: 1;
+}
+
+.content {
+  border-top: 1px solid #d1d5db;
+  padding: 16px;
+
+  transition-duration: 150ms;
+}
+
+.item--collapsed .content {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.item--expanded .content {
+  height: auto;
+}
+
+.item--expanded .toggle {
+  rotate: 90deg;
+}
