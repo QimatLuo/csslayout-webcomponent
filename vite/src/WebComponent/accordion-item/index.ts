@@ -1,10 +1,11 @@
 import STYLE from "./style.css?raw";
 import TEMPLATE from "./template.html?raw";
+import { register } from "../util";
 
-import { ArrowButton } from "../arrow-button";
-customElements.define("dep-arrow-button", ArrowButton);
+import("../arrow-button").then(register("dep"));
 
-export class AccordionItem extends HTMLElement {
+export const tagName = "accordion-item";
+export class WebComponent extends HTMLElement {
   constructor() {
     super();
     this.slot = this.hasAttribute("slot") ? this.slot : "items";
@@ -45,8 +46,8 @@ export class AccordionItem extends HTMLElement {
   }
 }
 
-function toggleExpand(host: AccordionItem) {
-  return (e: MouseEvent) => {
+function toggleExpand(host: WebComponent) {
+  return () => {
     host.expanded = !host.expanded;
   };
 }
