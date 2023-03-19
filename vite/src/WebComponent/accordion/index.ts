@@ -1,4 +1,4 @@
-import { AccordionItem } from "../accordion-item";
+import { WebComponent as AccordionItem } from "../accordion-item";
 import STYLE from "./style.css?raw";
 import TEMPLATE from "./template.html?raw";
 

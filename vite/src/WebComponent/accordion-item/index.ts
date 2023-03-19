@@ -46,8 +46,8 @@ export class WebComponent extends HTMLElement {
   }
 }
 
-function toggleExpand(host: AccordionItem) {
-  return (e: MouseEvent) => {
+function toggleExpand(host: WebComponent) {
+  return () => {
     host.expanded = !host.expanded;
   };
 }
