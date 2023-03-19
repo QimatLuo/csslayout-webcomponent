@@ -13,4 +13,13 @@ export class WebComponent extends HTMLElement {
       template.content.cloneNode(true)
     );
   }
+
+  static get observedAttributes() {
+    return ["size"];
+  }
+  attributeChangedCallback(name: string, oldValue: string, newValue: string) {
+    const dom = this.shadowRoot?.querySelector<HTMLDivElement>(".spinner");
+    dom!.style.height = newValue;
+    dom!.style.width = newValue;
+  }
 }
